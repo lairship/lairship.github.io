@@ -1,6 +1,3 @@
 title: lairship's blog
-author:
-  name: lairship
-  email: lairship@163.com
+author: lairship
 theme: minima
-include: _posts,_layouts,_includes,_sass
