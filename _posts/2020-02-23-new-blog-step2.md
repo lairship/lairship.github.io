@@ -53,3 +53,6 @@ theme: minima
 再次查看博客站点，在首页的末尾有了第二篇博客的入口，可以查看了。
 
 另外，一般情况下，README.md应该作为首页的，因此把第一篇博客的地址可以移动`_posts`目录下，同时修改README.md的内容为一些简介概览。
+
+补充一个截图如下：
+![New Preview](/assets/images/newblogstep2/6.png)
