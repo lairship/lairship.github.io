@@ -2,5 +2,5 @@ title: lairship's blog
 author:
   name: lairship
   email: lairship@163.com
-theme: jekyll-theme-minimal
+theme: minima
 include: _posts,_layouts,_includes,_sass
