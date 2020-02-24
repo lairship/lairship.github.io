@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "博客建站第二篇 - 选择博客主题"
+title: 博客建站第二篇 - 选择博客主题
 date: 2020-02-23 15:45:32
 tags: github
+categories: 博客建站
 ---
 
 ## 选择博客主题
@@ -10,7 +10,7 @@ tags: github
 
 1. 进入仓库的Settings
 ![Settings](/assets/images/newblogstep2/1.png)
-
+<!-- more -->
 1. 点击`Choose a theme`
 ![Choose a theme](/assets/images/newblogstep2/2.png)
 

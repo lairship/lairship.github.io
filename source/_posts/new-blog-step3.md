@@ -1,13 +1,18 @@
 ---
-title: 搭建 Hexo 博客系统
+title: 博客建站第三篇 - 搭建 Hexo 博客系统
 date: 2020-02-24 09:45:32
 tags: ["Hexo", "NexT"]
+categories: 博客建站
 ---
+
 ## 前言
 Github Pages默认使用的Jekyll生成博客，这个是要使用Ruby的，且中文资料实在太少。经过分析比较，还是Hexo更好一点，Hexo使用NodeJs，这个我有现成的。
 
 ## 环境搭建
-Hexo的中文资料很多，参考官方的说明文档就够了，过程并不复杂，传送门：[https://hexo.io/zh-cn/](https://hexo.io/zh-cn/)
+Hexo的中文资料很多，参考官方的说明文档就够了，过程并不复杂，传送门：
+* [Hexo: https://hexo.io/zh-cn/](https://hexo.io/zh-cn/)
+* [NexT: http://theme-next.iissnan.com/](http://theme-next.iissnan.com/)
+<!-- more -->
 另外参考了以下文章
 * [5分钟 搭建免费个人博客](https://www.jianshu.com/p/4eaddcbe4d12)
 * [GitHub Actions自动部署Hexo博客](https://blog.motreen.ml/posts/35722/)

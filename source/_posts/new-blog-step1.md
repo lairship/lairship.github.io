@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "博客建站第一篇 README.md"
+title: 博客建站第一篇 - README.md
 date: 2020-02-23 09:45:32
 tags: github
+categories: 博客建站
 ---
 
 ## 前言
@@ -14,7 +14,7 @@ tags: github
 开始动手，找个博客存放的地方，首选免费的。上网搜索一番，找到一篇不错的文章 [5分钟 搭建免费个人博客](https://www.jianshu.com/p/4eaddcbe4d12)，介绍了使用github.com存放博客的方法。正好我已经有了github账号，那就选这里吧，一番折腾下来，5分钟说的内容能看完，也能理解，但真要弄起来，还真不简单，特别是疫情期间的网速那个慢呀。
 
 基于自己的学习，为方便不太懂技术的人也能一步一步建立起自己的博客，总结如下：
-
+<!-- more -->
 1. 去github.com注册账号，首页就可以，只要用户名`username`，邮箱和密码3个内容就可以了，应该算是很方便的了
 1. 创建一个存放博客内容的仓库(repository)，名称必须是：`username`.github.io，类型为Public，勾选"Initialize this repository with a README"
 1. 修改README.md文件内容为你的第一篇博客内容。可以先不管格式，通过一个空行能隔开段落就好，以后再学进阶内容。
