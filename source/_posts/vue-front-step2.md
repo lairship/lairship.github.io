@@ -8,7 +8,7 @@ categories: Vue前端项目框架
 ## 前言
 目标是搭建一个可用的项目框架，将使用这些技术：`Element UI`用于布局和页面/组件功能，`i18n`实现多语言，`axios`进行Web API调用。先放一张最终效果图：
 ![最终效果](/assets/images/vuefrontstep2/1.png)
-
+<!-- more -->
 ## 多语言
 Vue i18n 的官方站点 [http://kazupon.github.io/vue-i18n/zh/](http://kazupon.github.io/vue-i18n/zh/)，文档非常完善。安装就是一个命令，`vue add i18n`，4个问题的选项如下：
 ```
