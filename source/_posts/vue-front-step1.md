@@ -1,5 +1,5 @@
 ---
-title: 探索前端开发 - 搭建Vue开发环境
+title: 探索前端开发 - 1.搭建Vue开发环境
 date: 2020-02-29 10:02:00
 tags: ["Vue", "VSCode"]
 categories: Vue前端项目框架
