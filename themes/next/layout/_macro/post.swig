@@ -250,6 +250,64 @@
 
         {{ post_nav(post) }}
       </footer>
+      <hr/>
+      <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    
+      <table><tr><td>
+      <form id="commentForm">
+        <input id="thread" type="hidden" name="Thread" value="0" />
+        <textarea name="Message" placeholder="写下评论" style="width:500px;height:50px;"></textarea><br />
+        <input type="text" name="Anonymous" placeholder="你的姓名" />
+        <input type="button" value="提交" onclick="addComment();" />
+      </form></td></tr></table>
+      <table id="comments"></table>
+      <script type="text/javascript">
+        var apiUrl = "https://disfwdwebapi.azurewebsites.net/api/comment";
+        var queryData = { "f": "lairship", "p": "{{page.path}}" };
+        function addComment() {
+            $.post(apiUrl,
+                $("#commentForm").serialize(),
+                function (data) {
+                    getComments();
+                }
+            );
+        }
+        function getComments() {
+            $.ajax({
+                type: "get",
+                url: apiUrl,
+                data: queryData,
+                dataType: "json",
+                success: function (data) {
+                    $('#thread').val(data.thread);
+                    $('#comments').empty(); // Clear the table body.
+      
+                    // Loop through the list of products.
+                    $.each(data.comments.reverse(), function (key, val) {
+                        var row = '<td colspan=2>' + (val.author ? jQuery('<div />').text(val.author).html() : '匿名用户') + ' | ' + val.createTime + '<br/>' + jQuery('<div />').text(val.message).html() + '</td>';
+                        $('<tr/>', { html: row }).appendTo($('#comments'));
+                        if (val.children) {
+                            $.each(val.children.reverse(), function (key, val) {
+                                var row = '<td style="width:30px;"></td><td>' + (val.author ? jQuery('<div />').text(val.author).html() : '匿名用户') + ' | ' + val.createTime + '<br/>' + jQuery('<div />').text(val.message).html() + '</td>';
+                                $('<tr/>', { html: row }).appendTo($('#comments'));
+                            })
+                        }
+                    });
+                }
+            });
+        }
+        function pageLoaded() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var f = urlParams.get('f');
+            var p = urlParams.get('p');
+            if (f) queryData.f = f;
+            if (p) queryData.p = p;
+      
+            getComments();
+        }
+      
+        $(document).ready(pageLoaded);
+      </script>
     {% else %}
       <footer class="post-footer">
         <div class="post-eof"></div>
